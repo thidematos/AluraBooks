@@ -2,11 +2,62 @@
     width: 24px;
     height: 24px;
     background-image: url("../assets/Menu.svg");
-    background-size: 100%;
-    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
+    background-color: var(--branco);
+    align-items: center;
+    position: relative;
+}
+
+.container{
+    display:flex;
+    align-items: center
+}
+
+.container_imagem{
+    padding: 0.6em;
+}
+
+.lista-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.container_botao{
+    display:none;
+}
+
+.container_botao:checked ~ .header_menu-hamb{
+    background-color: blue;
+}
+
+.container_botao:checked ~ .lista-menu{
+    display:block;
+}
+
+
+
+.lista-menu_titulo, .lista-menu_itens{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu_titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.lista_links{
+    background: var(--azul-degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
 }
