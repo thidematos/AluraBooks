@@ -1,3 +1,20 @@
+@import url("styles/header.css");
+
+
 :root{
     --corFundo: #EBECEE;
+    --branco: white;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #EBECEE;
+}
+
+.header{
+    background-color: var(--branco);
 }

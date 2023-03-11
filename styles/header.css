@@ -1,0 +1,12 @@
+.header_menu-hamb{
+    width: 24px;
+    height: 24px;
+    background-image: url("../assets/Menu.svg");
+    background-size: 100%;
+    display: inline-block;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+}
