@@ -1,0 +1,20 @@
+.topico{
+    background: var(--azul-degrade);
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 1.5em;
+    text-align: center;
+    gap: 2em;
+}
+
+.topico_titulo{
+    font: 300 1em var(--font);
+    color: white;
+}
+
+.topico_container{
+    display:flex;
+    flex-flow: row wrap;
+    gap:1em;
+    justify-content: center;
+}

@@ -50,7 +50,7 @@
     </section>
 
     <section class="carrossel">
-        <h2 class="carrossel_titulo">Novos lançamentos</h2>
+        <h2 class="carrossel_titulo">Últimos lançamentos</h2>
         <!-- Slider main container -->
         <div class="swiper">
             <!-- If we need pagination -->
@@ -87,7 +87,74 @@
             <a href="#" class="card_container_link">Saiba mais</a>
         </div>
     </section>
+
+    <section class="carrossel">
+        <h2 class="carrossel_titulo">Mais vendidos</h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Javascript.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Portugol.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/Liderança.png" alt=""></div>
+                <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt=""></div>
+
+            </div>
+            
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
     
+    <section class="card">
+        <div class="card_container">
+            <div class="card_container_conteudo">
+                <img src="assets/Estrelinhas.png" alt="" class="card_container_imagem">
+                <h2 class="card_container_titulo">Autora do Mês</h2>
+                <h3 class="card_container_subtitulo">Juliana Agarikov</h3>
+                <p class="card_container_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+            </div>
+            <span>
+                <img src="assets/Favoritos-1.svg" alt="Favoritos" class="card_container_imagem">
+                <img src="assets/Sacola.png" alt="Sacola" class="card_container_imagem">
+            </span>
+        </div>
+        <div class="card_container_icon">
+            <img src="assets/Perfil-escritora 1-1.png" alt="">
+            <a href="#" class="card_container_link">Saiba mais</a>
+        </div>      
+    </section>
+
+    <section class="topico">
+        <h2 class="topico_titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+        <div class="topico_container">
+            <a href="#" class="card_container_link">Android</a>
+            <a href="#" class="card_container_link">Marketing Digital</a>
+            <a href="#" class="card_container_link">Agile</a>
+            <a href="#" class="card_container_link">Startups</a>
+            <a href="#" class="card_container_link">HTML & CSS</a>
+            <a href="#" class="card_container_link">Python</a>
+            <a href="#" class="card_container_link">OO</a>
+            <a href="#" class="card_container_link">Java</a>
+        </div>
+    </section>
+
+    <section class="news">
+        <div class="news_container">
+            <h3 class="news_container_titulo">Fique por dentro das novidades!</h3>
+            <p class="news_container_paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <input type="email" name="" id="email" placeholder="Cadastre seu e-mail" class="news_container_input">
+        </div>
+    </section>
+
+    <footer class="footer">
+        <h4 class="footer_titulo">Grupo Alura</h4>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {

@@ -21,6 +21,7 @@
     flex-flow: column nowrap;
     gap: 0.56em;
     justify-items: space-between;
+    align-items:flex-start;
 }
 
 .card_container_titulo{
