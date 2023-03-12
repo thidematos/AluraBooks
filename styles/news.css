@@ -26,6 +26,5 @@
 .news_container_input::placeholder{
     background-image:url("../assets/Email.svg");
     background-repeat: no-repeat;
-    text-align:center;
-    background-position: 5em;
+    padding-left: 2em;
 }
