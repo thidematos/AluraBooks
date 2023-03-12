@@ -32,7 +32,7 @@
     color: var(--branco);
     background: url("../assets/Pesquisa.svg");
     background-repeat: no-repeat;
-    background-position: 2em;
+    background-position: 10%;
 }
 
 @media screen and (min-width: 1024px) {
@@ -43,7 +43,19 @@
         width: 50%;
     }
     .banner_pesquisa::placeholder{
-        background-position: 6.5em;
+        background-position: 17%;
         font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:1728px){
+    .banner_pesquisa{
+        width: 35%;
+    }
+    .banner_pesquisa::placeholder{
+        background-position: 25%;
+    }
+    .banner{
+        padding: 6em 0;
     }
 }

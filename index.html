@@ -13,7 +13,7 @@
     <header class="header"> 
         <div class="container">
             <input type="checkbox" name="" id="menu" class="container_botao">
-            <label for="menu">
+            <label for="menu" class="container_rotulo">
                 <div class="header_menu-hamb container_imagem"></div>
             </label>
             <ul class="lista-menu">
@@ -35,12 +35,12 @@
                 </li>
             </ul>
             <img src="assets/Logo.svg" alt="Logo da AluraBooks" class="container_imagem">
-            <h1 class="container_titulo"><strong class="container_titulo-strong">Alura</strong>Books</h1>
+            <h1 class="container_titulo_header"><strong class="container_titulo-strong">Alura</strong>Books</h1>
         </div>
 
         <ul class="header_opcoes">
             <input type="checkbox" id="opcoes_menu" class="opcoes_check">
-            <label for="opcoes_menu">CATEGORIAS</label>
+            <label for="opcoes_menu" class="opcoes_rotulo">CATEGORIAS</label>
             <ul class="lista-menu">
                 <li class="lista-menu_itens">
                     <a href="#" class="lista_links">Programação</a>
@@ -63,9 +63,17 @@
         </ul>
 
         <div class="container">
-            <a href="#"><img src="assets/Favoritos.svg" alt="" class="container_imagem container_imagem-fav"></a>
-            <a href="#"><img src="assets/Compras.svg" alt="Compras" class="container_imagem"></a>
-            <a href="#"><img src="assets/Usuário.svg" alt="" class="container_imagem"></a>
+            <a href="#">
+                <img src="assets/Favoritos.svg" alt="" class="container_imagem container_imagem-fav">
+            </a>
+            <a href="#" class="container_link">
+                <img src="assets/Compras.svg" alt="Compras" class="container_imagem">
+                <p class="container_texto">Minha sacola</p>
+            </a>
+            <a href="#" class="container_link">
+                <img src="assets/Usuário.svg" alt="" class="container_imagem">
+                <p class="container_texto">Meu perfil</p>
+            </a>
         </div>
     </header>
 
@@ -77,84 +85,88 @@
 
     <section class="carrossel">
         <h2 class="carrossel_titulo">Últimos lançamentos</h2>
-        <!-- Slider main container -->
-        <div class="swiper">
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                 <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/Liderança.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/Portugol.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/Javascript.png" alt=""></div>
+        <div class="carrossel_container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                        <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Liderança.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Portugol.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Javascript.png" alt=""></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+            <div class="card">
+                <div class="card_container">
+                    <div class="card_container_conteudo">
+                        <h2 class="card_container_titulo">Talvez você também se interesse por...</h2>
+                        <h3 class="card_container_subtitulo">Angular 11 e Firebase</h3>
+                        <p class="card_container_texto">Construindo uma aplicação integrada com a plataforma Google.</p>
+                    </div>
+                    <span>
+                        <img src="assets/Favoritos-1.svg" alt="Favoritos" class="card_container_imagem">
+                        <img src="assets/Sacola.png" alt="Sacola" class="card_container_imagem">
+                    </span>
+                </div>
+                <div class="card_container_icon">
+                    <img src="assets/Angular-1.png" alt="Angular Icone" class="card_container_imagem">
+                    <a href="#" class="card_container_link">Saiba mais</a>
+                </div>
+            </div>
         </div>
     </section>
-
-    <section class="card">
-        <div class="card_container">
-            <div class="card_container_conteudo">
-                <h2 class="card_container_titulo">Talvez você também se interesse por...</h2>
-                <h3 class="card_container_subtitulo">Angular 11 e Firebase</h3>
-                <p class="card_container_texto">Construindo uma aplicação integrada com a plataforma Google.</p>
-            </div>
-            <span>
-                <img src="assets/Favoritos-1.svg" alt="Favoritos" class="card_container_imagem">
-                <img src="assets/Sacola.png" alt="Sacola" class="card_container_imagem">
-            </span>
-        </div>
-        <div class="card_container_icon">
-            <img src="assets/Angular-1.png" alt="Angular Icone" class="card_container_imagem">
-            <a href="#" class="card_container_link">Saiba mais</a>
-        </div>
-    </section>
+    
 
     <section class="carrossel">
         <h2 class="carrossel_titulo">Mais vendidos</h2>
         <!-- Slider main container -->
-        <div class="swiper">
-            <!-- If we need pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/Javascript.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/Portugol.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/Liderança.png" alt=""></div>
-                <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt=""></div>
-
-            </div>
+        <div class="carrossel_container">
+            <div class="swiper">
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="assets/Guia Front-end.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Javascript.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Portugol.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/Liderança.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.png" alt=""></div>
+                </div>
             
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+            <div class="card">
+                <div class="card_container">
+                    <div class="card_container_conteudo">
+                        <img src="assets/Estrelinhas.png" alt="" class="card_container_imagem">
+                        <h2 class="card_container_titulo">Autora do Mês</h2>
+                        <h3 class="card_container_subtitulo">Juliana Agarikov</h3>
+                        <p class="card_container_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
+                    </div>
+                    <span>
+                        <img src="assets/Favoritos-1.svg" alt="Favoritos" class="card_container_imagem">
+                        <img src="assets/Sacola.png" alt="Sacola" class="card_container_imagem">
+                    </span>
+                </div>
+                <div class="card_container_icon">
+                    <img src="assets/Perfil-escritora 1-1.png" alt="">
+                    <a href="#" class="card_container_link">Saiba mais</a>
+                </div>
+            </div>
         </div>
     </section>
     
-    <section class="card">
-        <div class="card_container">
-            <div class="card_container_conteudo">
-                <img src="assets/Estrelinhas.png" alt="" class="card_container_imagem">
-                <h2 class="card_container_titulo">Autora do Mês</h2>
-                <h3 class="card_container_subtitulo">Juliana Agarikov</h3>
-                <p class="card_container_texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.</p>
-            </div>
-            <span>
-                <img src="assets/Favoritos-1.svg" alt="Favoritos" class="card_container_imagem">
-                <img src="assets/Sacola.png" alt="Sacola" class="card_container_imagem">
-            </span>
-        </div>
-        <div class="card_container_icon">
-            <img src="assets/Perfil-escritora 1-1.png" alt="">
-            <a href="#" class="card_container_link">Saiba mais</a>
-        </div>      
-    </section>
+
 
     <section class="topico">
         <h2 class="topico_titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>

@@ -29,3 +29,15 @@
     }
     
 }
+
+@media screen and (min-width: 1728px){
+    .topico{
+        padding: 3em 30vw;
+    }
+    .topico_titulo{
+        font-size: 2rem;
+    }
+    .card_container_link{
+        font-size: 2rem;
+    }
+}
