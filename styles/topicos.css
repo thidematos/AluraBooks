@@ -18,3 +18,14 @@
     gap:1em;
     justify-content: center;
 }
+
+@media screen and (min-width:1024px) {
+    .topico_titulo{
+        font-size: 1.5rem;
+    }
+
+    .card_container_link{
+        font-size: 1.5rem;
+    }
+    
+}

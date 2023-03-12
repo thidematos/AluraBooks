@@ -6,7 +6,7 @@
     background-color: var(--branco);
 }
 
-.news_cotainer_titulo{
+.news_container_titulo{
     font: 400 1.12em var(--font);
 }
 
@@ -27,4 +27,27 @@
     background-image:url("../assets/Email.svg");
     background-repeat: no-repeat;
     padding-left: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+    .news_container{
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10em;
+        padding: 1.87em 9em 3.31em 9em; 
+    }
+
+    .news_container_titulo{
+        font-size: 1.5rem;
+    }
+
+    .container_conteudo{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .news_container_input{
+        width: 40%;
+    }
 }

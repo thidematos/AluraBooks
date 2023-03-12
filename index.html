@@ -35,9 +35,35 @@
                 </li>
             </ul>
             <img src="assets/Logo.svg" alt="Logo da AluraBooks" class="container_imagem">
+            <h1 class="container_titulo"><strong class="container_titulo-strong">Alura</strong>Books</h1>
         </div>
+
+        <ul class="header_opcoes">
+            <input type="checkbox" id="opcoes_menu" class="opcoes_check">
+            <label for="opcoes_menu">CATEGORIAS</label>
+            <ul class="lista-menu">
+                <li class="lista-menu_itens">
+                    <a href="#" class="lista_links">Programação</a>
+                </li>
+                <li class="lista-menu_itens">
+                    <a href="#" class="lista_links">Front-End</a>
+                </li>
+                <li class="lista-menu_itens">
+                    <a href="#" class="lista_links">Infraestrutura</a>
+                </li>
+                <li class="lista-menu_itens">
+                    <a href="#" class="lista_links">Business</a>
+                </li>
+                <li class="lista-menu_itens">
+                    <a href="#" class="lista_links">Design & UX</a>
+                </li>
+            </ul>
+            <li class="header_opcoes_itens"><a href="#" class="opcoes_links">Favoritos</a></li>
+            <li class="header_opcoes_itens"><a href="#" class="opcoes_links">Minha estante</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="assets/Favoritos.svg" alt="" class="container_imagem"></a>
+            <a href="#"><img src="assets/Favoritos.svg" alt="" class="container_imagem container_imagem-fav"></a>
             <a href="#"><img src="assets/Compras.svg" alt="Compras" class="container_imagem"></a>
             <a href="#"><img src="assets/Usuário.svg" alt="" class="container_imagem"></a>
         </div>
@@ -146,14 +172,46 @@
 
     <section class="news">
         <div class="news_container">
-            <h3 class="news_container_titulo">Fique por dentro das novidades!</h3>
-            <p class="news_container_paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+            <div class="container_conteudo">
+                <h3 class="news_container_titulo">Fique por dentro das novidades!</h3>
+                <p class="news_container_paragrafo">Atualizações de e-books, novos livros, promoções e outros.</p>
+            </div>
             <input type="email" name="" id="email" placeholder="Cadastre seu e-mail" class="news_container_input">
         </div>
     </section>
 
     <footer class="footer">
-        <h4 class="footer_titulo">Grupo Alura</h4>
+        <div class="footer_container">
+            <h4 class="container_titulo">Grupo Alura</h4>
+        </div>
+        <ul class="container_lista">
+            <h3 class="lista_titulo">EDUCAÇÃO</h3>
+            <li class="lista_item"><img src="assets/Caelum.png" alt="" class="lista_imagem">Caelum</li>
+            <li class="lista_item"><img src="assets/CasaDoCodigo.png" alt="" class="lista_imagem">Casa do Código</li>
+        </ul>
+        <ul class="container_lista">
+            <h3 class="lista_titulo">EDUCAÇÃO ONLINE</h3>
+            <li class="lista_item"><img src="assets/Alura.png" alt="" class="lista_imagem">Alura</li>
+            <li class="lista_item"><img src="assets/AluraEmpresas.png" alt="" class="lista_imagem">Alura para Empresas</li>
+            <li class="lista_item"><img src="assets/AluraLatam.png" alt="" class="lista_imagem">Alura LATAM</li>
+            <li class="lista_item"><img src="assets/AluraStart.png" alt="" class="lista_imagem">Alura Start</li>
+            <li class="lista_item"><img src="assets/MusicDot.png" alt="" class="lista_imagem">Music Dot</li>
+            <li class="lista_item"><img src="assets/AluraLingua.png" alt="" class="lista_imagem">Alura Língua</li>
+            <li class="lista_item"><img src="assets/PM3.png" alt="" class="lista_imagem">PM3</li>
+        </ul>
+        <ul class="container_lista">
+            <h3 class="lista_titulo">COMUNIDADE</h3>
+            <li class="lista_item"><img src="assets/HipstersTech.png" alt=" " class="lista_imagem">Hipsters ponto Tech</li>
+            <li class="lista_item"><img src="assets/Scuba.png" alt="" class="lista_imagem">Scuba Dev</li>
+            <li class="lista_item"><img src="assets/Layers.png" alt="" class="lista_imagem">Layers ponto Tech</li>
+            <li class="lista_item"><img src="assets/LikeABoss.png" alt="" class="lista_imagem">Like a Boss</li>
+            <li class="lista_item"><img src="assets/CarreiraSemFronteira.png" alt="" class="lista_imagem">Carreira sem Fronteira</li>
+            <li class="lista_item"><img src="assets/HipstersJobs.png" alt="" class="lista_imagem">Hipster ponto Jobs</li>
+            <li class="lista_item"><img src="assets/GUJ.png" alt="" class="lista_imagem">GUJ</li>
+        </ul>
+
+        
+
     </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
@@ -164,6 +222,10 @@
             pagination: {
                 el: '.swiper-pagination',
                 type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
             },
         });
     </script>

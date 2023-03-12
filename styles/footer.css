@@ -1,3 +1,38 @@
-.footer_titulo{
+.container_titulo{
     padding: 1.06em 0 1.5em 1.5em;
+}
+
+.container_lista{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .footer{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+    }
+
+    .container_lista{
+        display: block;
+        padding: 3.81em;
+    }
+
+    .lista_titulo{
+        font: 400 0.87rem var(--font);
+        color: #858585;
+        padding: 1.5em;
+    }
+
+    .lista_item{
+        font: 400 0.87rem var(--font);
+        color: #474646;
+        padding: 1em;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .lista_imagem{
+        padding-right: 0.5em;
+    }
 }

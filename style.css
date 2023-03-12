@@ -7,6 +7,7 @@
 @import url("styles/topicos.css");
 @import url("styles/news.css");
 @import url("styles/footer.css");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
 
 
 :root{
@@ -16,6 +17,7 @@
     --azul-degrade: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
     --azul: #002F52;
     --font: 'Poppins';
+    --fontLogo: 'Josefin Sans';
 }
 
 body{
