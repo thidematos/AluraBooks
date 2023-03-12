@@ -20,12 +20,12 @@
     border-radius: 1.5em;
     background: transparent;
     font: 400 1em var(--font);
+    padding: 1em;
 }
 
 .news_container_input::placeholder{
-    background-image: url("assets/Email.svg");
+    background-image:url("../assets/Email.svg");
     background-repeat: no-repeat;
-    background-size: contain;
     text-align:center;
-    background-position: 4.5em;
+    background-position: 5em;
 }
