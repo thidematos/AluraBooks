@@ -1,5 +1,8 @@
+
+
 .container_titulo{
-    padding: 1.06em 0 1.5em 1.5em;
+    display:block;
+    padding: 1.06em 0 1.5em 0;
 }
 
 .container_lista{
@@ -11,12 +14,13 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: baseline;
+        justify-content: space-around;
     }
 
     .container_lista{
         display: block;
-        padding: 3.81em;
     }
+
 
     .lista_titulo{
         font: 400 0.87rem var(--font);
@@ -31,7 +35,14 @@
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
+        text-decoration: none;
     }
+
+    .item_link{
+        text-decoration: none;
+        color: #474646;
+    }
+
     .lista_imagem{
         padding-right: 0.5em;
     }
